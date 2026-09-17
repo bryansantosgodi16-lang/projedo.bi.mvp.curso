@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import com.projeto.banco.model.Getters;
 
 import jakarta.persistence.Column;
@@ -32,4 +33,32 @@ private String cpf;
 private String telefone;
 
 
+=======
+
+@Entity(name= "tb_cliente")
+@Getters
+@NoArgsConstructos
+class cliente {
+@id
+@generatedvalue(strategy = generationtype.IDENTITY)
+private long id;
+
+@column(nullable = false)
+private String nome;
+
+@column(nullable = false, unique = true)
+private String documento;
+
+@column(nullable = false, unique = true)
+private String email;
+
+@column(nullable = false)
+private String senha;
+
+@column(nullable = false)
+private String cpf;
+
+@column(nullable = false)
+private String cep;
+>>>>>>> 6f53452a93455fbaa6fb747b45cb708a82b711cd
 }
